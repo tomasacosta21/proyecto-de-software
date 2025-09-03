@@ -74,6 +74,7 @@ body {
         .servicios ul {
           list-style: none;
           padding: 0;
+          text-align: left;
         }
         .servicios li {
           margin: 10px 0;
