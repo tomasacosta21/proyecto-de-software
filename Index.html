@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BitLink</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="resources/Logo.svg" alt="BitLink Logo" style="height: 60px;">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#servicios">Servicios y experiencias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h1>Las soluciones del mañana, hoy</h1>
+</section>
+
+<section class="equipo">
+    <h2>¿Quiénes somos?</h2>
+    <div class="equipo-carousel">
+        <div class="equipo-item">
+            <img src="resources/programador-1.jpg" alt="Miembro 1">
+            <p>Ing. Pedro Pérez</p>
+        </div>
+        <div class="equipo-item">
+            <img src="resources/programador-2.jpg" alt="Miembro 2">
+            <p>Lic. Juan Gonzalez</p>
+        </div>
+        <div class="equipo-item">
+            <img src="resources/programador-3.jpg" alt="Miembro 3">
+            <p>Tec. Lionel Messi</p>
+        </div>
+    </div>
+</section>
+
+<section id="servicios">
+    <h2>¿Qué hacemos?</h2>
+    <div class="servicios">
+        <img src="resources/stock-img-1.svg" alt="Servicios">
+        <ul class="servicios-list">
+            <li onclick="openModal('web')"><strong>Soluciones web</strong><br>Desarrollos a la medida de tus necesidades
+            </li>
+            <li onclick="openModal('mobile')"><strong>Soluciones mobile</strong><br>Soluciones de alcance globalizado
+            </li>
+            <li onclick="openModal('empresas')"><strong>Soluciones empresariales</strong><br>Plataformas para tus
+                negocios
+            </li>
+            <li onclick="openModal('ia')"><strong>Inteligencia Artificial</strong><br>Modelos especializados y LLMs</li>
+            <li onclick="openModal('ciber')"><strong>Ciberseguridad</strong><br>Asegurando tus tecnologías</li>
+            <li onclick="openModal('blockchain')"><strong>Blockchain</strong><br>Innovando profundamente</li>
+        </ul>
+    </div>
+</section>
+
+<footer id="contacto">
+    <div>
+        <h3>Visítanos</h3>
+        <p>Dirección 1234</p>
+    </div>
+    <div>
+        <h3>Contáctanos</h3>
+        <ul style="list-style:none; padding:0;">
+            <li>📞 11 1111-1111</li>
+            <li>✉️ bitlink@gmail.com</li>
+            <li>🐙 github.com/BitLink</li>
+            <li>💼 linkedin.com/company/bitlink</li>
+            <li>📸 instagram.com/bitlink</li>
+            <li>📘 facebook.com/bitlink</li>
+        </ul>
+    </div>
+</footer>
+
+<div class="copyright">
+    <p>Copyright © BitLink</p>
+</div>
+
+<!-- Modales -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-text"></p>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById("modal");
+    const modalTitle = document.getElementById("modal-title");
+    const modalText = document.getElementById("modal-text");
+
+    function openModal(service) {
+      modal.style.display = "flex";
+      switch(service) {
+        case "web":
+          modalTitle.textContent = "Soluciones web";
+          modalText.textContent = "Clientes: X, Y, Z. Trabajos: desarrollo de sitios corporativos.";
+          break;
+        case "mobile":
+          modalTitle.textContent = "Soluciones mobile";
+          modalText.textContent = "Clientes: A, B, C. Trabajos: apps multiplataforma.";
+          break;
+        case "empresas":
+          modalTitle.textContent = "Soluciones empresariales";
+          modalText.textContent = "Clientes: empresas de retail, logística. Sistemas ERP y CRM.";
+          break;
+        case "ia":
+          modalTitle.textContent = "Inteligencia Artificial";
+          modalText.textContent = "Clientes: startups IA. Trabajos: chatbots, predicciones.";
+          break;
+        case "ciber":
+          modalTitle.textContent = "Ciberseguridad";
+          modalText.textContent = "Clientes: bancos. Trabajos: auditoría de seguridad.";
+          break;
+        case "blockchain":
+          modalTitle.textContent = "Blockchain";
+          modalText.textContent = "Clientes: fintech. Trabajos: contratos inteligentes.";
+          break;
+      }
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+
+</body>
+</html>
