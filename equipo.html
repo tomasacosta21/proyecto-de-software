@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo - BitLink</title>
+    <meta name="description"
+          content="Conoce nuestro equipo de desarrollo de software. Profesionales expertos en tecnología e innovación.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <!-- Replaced custom SVG with provided logo -->
+            <img src="logo.svg" alt="BitLink Logo" class="logo-icon">
+            <span class="logo-text">BitLink</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+            <li><a href="equipo.html" class="nav-link active">Equipo</a></li>
+            <li><a href="trabajos.html" class="nav-link">Trabajos</a></li>
+            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Added dark mode toggle button -->
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<!-- Team Section -->
+<section class="team page-section">
+    <div class="container">
+        <div class="section-header">
+            <h1>Nuestro Equipo</h1>
+            <p>Profesionales apasionados por la tecnología y la innovación</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Ana García">
+                </div>
+                <div class="member-info">
+                    <h3>Ana García</h3>
+                    <p class="member-role">Full Stack Developer & Tech Lead</p>
+                    <p class="member-bio">Especialista en React, Node.js y arquitecturas cloud con +6 años de
+                        experiencia liderando equipos de desarrollo.</p>
+                    <div class="member-skills">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Carlos Mendoza">
+                </div>
+                <div class="member-info">
+                    <h3>Carlos Mendoza</h3>
+                    <p class="member-role">Mobile Developer & UX Specialist</p>
+                    <p class="member-bio">Experto en desarrollo móvil multiplataforma y diseño de experiencias de
+                        usuario intuitivas y atractivas.</p>
+                    <div class="member-skills">
+                        <span>React Native</span>
+                        <span>Flutter</span>
+                        <span>UI/UX</span>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-photo">
+                    <img src="/placeholder.svg?height=300&width=300" alt="María López">
+                </div>
+                <div class="member-info">
+                    <h3>María López</h3>
+                    <p class="member-role">Backend Developer & DevOps</p>
+                    <p class="member-bio">Especializada en arquitecturas escalables, microservicios y automatización de
+                        procesos de desarrollo.</p>
+                    <div class="member-skills">
+                        <span>Python</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <!-- Updated footer logo to use provided SVG -->
+                <img src="logo.svg" alt="BitLink Logo" class="logo-icon">
+                <span>BitLink</span>
+            </div>
+            <p>&copy; 2025 BitLink. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

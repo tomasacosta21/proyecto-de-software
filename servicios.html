@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - BitLink</title>
+    <meta name="description"
+          content="Servicios de desarrollo de software: aplicaciones web, móviles e integraciones. Soluciones tecnológicas profesionales.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <!-- Replaced custom SVG with provided logo -->
+            <img src="logo.svg" alt="BitLink Logo" class="logo-icon">
+            <span class="logo-text">BitLink</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+            <li><a href="equipo.html" class="nav-link">Equipo</a></li>
+            <li><a href="trabajos.html" class="nav-link">Trabajos</a></li>
+            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Added dark mode toggle button -->
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<!-- Services Section -->
+<section class="services page-section">
+    <div class="container">
+        <div class="section-header">
+            <h1>Nuestros Servicios</h1>
+            <p>Soluciones tecnológicas integrales para impulsar tu negocio</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <h3>Desarrollo Web</h3>
+                <p>Aplicaciones web modernas y responsivas utilizando las últimas tecnologías como React, Vue.js y
+                    Node.js.</p>
+                <ul class="service-features">
+                    <li>Frontend responsivo</li>
+                    <li>Backend escalable</li>
+                    <li>APIs RESTful</li>
+                    <li>Bases de datos optimizadas</li>
+                </ul>
+                <a href="contacto.html" class="btn btn-outline">Solicitar Propuesta</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                        <line x1="12" y1="18" x2="12.01" y2="18"/>
+                    </svg>
+                </div>
+                <h3>Aplicaciones Móviles</h3>
+                <p>Apps nativas e híbridas para iOS y Android que ofrecen experiencias de usuario excepcionales.</p>
+                <ul class="service-features">
+                    <li>React Native</li>
+                    <li>Flutter</li>
+                    <li>Apps nativas</li>
+                    <li>Publicación en stores</li>
+                </ul>
+                <a href="contacto.html" class="btn btn-outline">Solicitar Propuesta</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                </div>
+                <h3>Integraciones & APIs</h3>
+                <p>Conectamos sistemas y automatizamos procesos mediante integraciones robustas y APIs eficientes.</p>
+                <ul class="service-features">
+                    <li>APIs personalizadas</li>
+                    <li>Integraciones de terceros</li>
+                    <li>Microservicios</li>
+                    <li>Automatización</li>
+                </ul>
+                <a href="contacto.html" class="btn btn-outline">Solicitar Propuesta</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <!-- Updated footer logo to use provided SVG -->
+                <img src="logo.svg" alt="BitLink Logo" class="logo-icon">
+                <span>BitLink</span>
+            </div>
+            <p>&copy; 2025 BitLink. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
