@@ -69,6 +69,7 @@ body {
   background-color: var(--color-white);
   /* Added smooth transition for theme changes */
   transition: background-color 0.3s ease, color 0.3s ease;
+  padding-top: 70px; /* To account for fixed navbar */
 }
 
 /* Typography */
@@ -183,8 +184,8 @@ p {
 }
 
 .logo-icon {
-  width: 32px;
-  height: 32px;
+  width: 150px;
+  height: 150px;
   color: var(--color-primary);
 }
 
@@ -274,14 +275,24 @@ p {
   display: block;
 }
 
+.main{
+    display: column;
+    gap: var(--space-4);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
 /* Hero Section */
 .hero {
-  position: relative;
-  height: 100vh;
-  min-height: 600px;
-  background: linear-gradient(135deg, var(--color-gray-light) 0%, var(--color-white) 100%);
-  display: flex;
-  align-items: center;
+  flex: 1;
+  /* Agrega un padding que coincida con el sidebar */
+  padding-top: var(--space-4);
+}
+
+.sidebar{
+    width: 350px;
+    /* Asegura que el padding sea igual al del hero */
+    padding: var(--space-4)
 }
 
 .hero-container {
@@ -327,10 +338,6 @@ p {
 }
 
 /* Section Styles */
-section {
-  padding: var(--space-8) 0;
-}
-
 .section-header {
   text-align: center;
   margin-bottom: var(--space-6);
@@ -352,6 +359,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--space-4);
+  align-items: stretch;
 }
 
 .service-card {
@@ -711,8 +719,9 @@ section {
 
 /* Summary Strips */
 .summary-strips {
-  background-color: var(--color-gray-light);
-  padding: var(--space-8) 0;
+  display: flex;
+  flex-direction: column; /* Apila las tarjetas una encima de otra */
+  gap: var(--space-4);
 }
 
 .summary-strips .container {
@@ -722,7 +731,7 @@ section {
 }
 
 .strip {
-  background-color: var(--color-white);
+  background-color: var(--color-gray-light);
   padding: var(--space-4);
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
@@ -766,12 +775,15 @@ section {
   background-color: var(--color-primary);
   color: var(--color-white);
   padding: var(--space-4) 0;
+  padding: 0px 0; /* Un padding más reducido para un tamaño más compacto */
+  margin-top: 0; /* Elimina la separación innecesaria */
 }
 
 .footer-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .footer-logo {
