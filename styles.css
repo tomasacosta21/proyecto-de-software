@@ -72,6 +72,8 @@ body {
   padding-top: 70px; /* To account for fixed navbar */
 }
 
+
+
 /* Typography */
 h1,
 h2,
@@ -275,15 +277,16 @@ p {
   display: block;
 }
 
-.main{
-    display: column;
+main{
+    display: flex;
     gap: var(--space-4);
     max-width: var(--container-max-width);
     margin: 0 auto;
+    align-items: flex-start;
 }
 
 /* Hero Section */
-.hero {
+.home {
   flex: 1;
   /* Agrega un padding que coincida con el sidebar */
   padding-top: var(--space-4);
@@ -295,7 +298,7 @@ p {
     padding: var(--space-4)
 }
 
-.hero-container {
+.home-content {
   max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 var(--space-3);
@@ -323,6 +326,20 @@ p {
   margin-bottom: var(--space-4);
   opacity: 0.9;
   line-height: 1.6;
+}
+
+.hero-mission-text{
+    font-size: 1.03rem;
+    margin-bottom: var(--space-4);
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.hero-vision-text{
+    font-size: 1.03rem;
+    margin-bottom: var(--space-4);
+    opacity: 0.9;
+    line-height: 1.6;
 }
 
 .hero-cta {
@@ -957,6 +974,22 @@ textarea:focus {
   top: 80%;
   right: 35%;
   animation-delay: 1s;
+}
+
+.bit-5 {
+  top: 50%;
+  right: 55%;
+  animation-delay: 1s;
+}
+.bit-6 {
+  top: 31%;
+  right: 90%;
+  animation-delay: 2s;
+}
+.bit-7 {
+  top: 57%;
+  right: 75%;
+  animation-delay: 3s;
 }
 
 @keyframes float {
